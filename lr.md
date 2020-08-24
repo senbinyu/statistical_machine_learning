@@ -16,4 +16,9 @@
 特征过多，稀疏线性关系，目的为了在一堆特征里面找出主要的特征
 
 ## logistic regression，逻辑斯蒂回归
-1. 
+1. 这是一种二分类方法，属于广义线性模型，logistic里用的是sigmoid函数，即y^ = h(wx+b),即在之前linear regression基础上加非线性函数sigmoid。
+这里是二分类，（伯努利过程），p(y=1|x,w) = h(wx+b); p(y=0|x,w) = 1-h(wx+b)，p(y|x,θ) = h(wx+b)^y · (1-h(wx+b))^(1-y)，当所有的样本连乘，综合其发生的最大概率，即可将其看成求一个二分类分布的最大对数似然函数ylogy^ + (1-y)log(1-y^)，此处的y^=h(wx+b)，预测值，将其化为最小化损失函数，将上述取负号即可，如下图，  
+![lr_loss2](https://user-images.githubusercontent.com/42667259/91023250-9acc0980-e5f6-11ea-8912-8fe65dbc34ff.jpg)  
+以上就是CE损失。总的来讲可以这样理解，最大化对数似然函数，就是要最小化CE损失函数。
+
+2. 
