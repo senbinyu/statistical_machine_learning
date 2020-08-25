@@ -38,4 +38,7 @@ https://blog.csdn.net/jiangjieqazwsx/article/details/51418681
 9. 核函数有哪些？  
 ![kernel_func](https://user-images.githubusercontent.com/42667259/91205766-5def3800-e706-11ea-912b-96da44a3a578.png)
 
+10. Hinge loss，合页损失？   
+Hinge loss（合页损失）用于训练分类器的损失函数，常被用于“最大间隔分类”。对于标签 t=±1，预测的结果y，其损失函数公式可以表示为：loss = max(0, 1-ty).当y落在满足条件的一侧时，不管是多少，损失函数为0；而在不满足条件的一侧，会逐渐增大。这就保证了普通向量损失为0，不参与超平面的最终决定，这才是SVM的核心所在，保证了SVM解的稀疏性。  
+具体可见知乎链接：https://www.zhihu.com/question/47746939
 
