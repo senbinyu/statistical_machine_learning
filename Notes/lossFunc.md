@@ -39,7 +39,7 @@ https://zhuanlan.zhihu.com/p/47202768
 
 - Cross entropy, CE Loss,交叉熵损失   
 https://zhuanlan.zhihu.com/p/58883095  
-如下图所示,y是真实标签，a是预测标签，一般可通过sigmoid，softmax得到，x是样本，n是样本数目  
+如下图所示,y是真实标签，a是预测标签，一般可通过sigmoid，softmax得到，x是样本，n是样本数目，和对数似然等价。    
 ![ce_loss](https://user-images.githubusercontent.com/42667259/91491995-2c689f00-e8b5-11ea-8294-e6c122da3476.png)  
 
 - hinge loss，合页损失  
